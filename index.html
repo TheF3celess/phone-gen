@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="ppck-ver" content="a0c71d197a3294a96c19148d358c17aa" />
+  <title>Random Phone Number Generator</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Layout */
+    .content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #ffffff;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .header .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #6b43ff;
+    }
+
+    .header nav {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .header nav a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .cta-button {
+      padding: 8px 15px;
+      background-color: #6b43ff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .cta-button:hover {
+      background-color: #5736cc;
+    }
+
+    /* Main Content */
+    .main {
+      display: flex;
+      gap: 20px;
+      padding: 20px;
+      flex: 1;
+    }
+
+    .generator-section {
+      flex: 3;
+    }
+
+    .generator-section h1 {
+      font-size: 2rem;
+      color: #333;
+    }
+
+    .generator-section .form {
+      display: flex;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    #country-selector {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    .generate-button {
+      padding: 8px 15px;
+      background-color: #6b43ff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .generate-button:hover {
+      background-color: #5736cc;
+    }
+
+    .results {
+      margin-top: 20px;
+    }
+
+    .results h3 {
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    /* Call-to-Action Section */
+    .cta-section {
+      flex: 1;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .cta-section h3 {
+      color: #333;
+      font-size: 1.2rem;
+    }
+
+    .cta-section p {
+      margin: 10px 0;
+      font-size: 0.9rem;
+    }
+
+    .request-button {
+      padding: 10px 20px;
+      background-color: #6b43ff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .request-button:hover {
+      background-color: #5736cc;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 10px 0;
+      background-color: #333;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">KrispCall</div>
+    <nav>
+      <a href="#">100+ CRM Integrations</a>
+      <a href="#">All Products</a>
+      <a href="#">Solutions</a>
+      <a href="#">Pricing</a>
+      <a href="#">Free Tools</a>
+      <a href="#">Resources</a>
+      <button class="cta-button">Get Started</button>
+    </nav>
+  </header>
+
+  <div class="content">
+    <main class="main">
+      <section class="generator-section">
+        <h1>Random phone number generator</h1>
+        <p>A quick and easy way to generate phone numbers from various countries.</p>
+
+        <div class="form">
+          <select id="country-selector">
+            <option value="us">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="ca">Canada</option>
+            <option value="se">Sweden</option>
+          </select>
+          <button class="generate-button">Generate</button>
+        </div>
+
+        <div class="results">
+          <h3>Generated Numbers</h3>
+          <ul id="numbers-list"></ul>
+        </div>
+      </section>
+
+      <aside class="cta-section">
+        <h3>Need Bulk Phone Number Generator?</h3>
+        <p>We offer bulk API solutions for generating phone numbers. Contact us.</p>
+        <button class="request-button">Request Access</button>
+      </aside>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 KrispCall. All rights reserved.</p>
+  </footer>
+</body>
+</html>
